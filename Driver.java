@@ -14,9 +14,8 @@ public class Driver {
     }
 
     private static void displayAllBooks(List<Book> books){
-        int booksCount = books.size();
-        for(int i=0; i<booksCount; i++){
-            books.get(i).printDetails();
+        for (Book book : books) {
+            book.printDetails();
         }
     }
 }
